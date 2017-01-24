@@ -1,0 +1,12 @@
+.navbar {
+    border-radius: 0;
+}
+
+.navbar > * {
+    position: relative;
+}
+
+.navbarCollapse {
+    max-height: calc(100vh - 50px);
+    padding: 0;
+}

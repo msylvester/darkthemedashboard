@@ -1,0 +1,27 @@
+.sidebarScroll {
+    height: 100%;
+}
+
+.sidebarFixed {
+    max-height: none !important;
+
+    &:not(.fullHeight) .sidebarScroll {
+        max-height: calc(100vh - 50px);
+    }
+
+    &.affixed .sidebarScroll,
+    &.fullHeight .sidebarScroll {
+        max-height: 100vh;
+    }
+}
+
+.sidebarLink {
+    display: flex !important;
+    align-items: center;
+}
+
+.sidebarLinkText {
+    display: inline-flex;
+    justify-content: space-between;
+    flex-grow: 1;
+}
